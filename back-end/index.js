@@ -12,7 +12,7 @@ pool.getConnection(function(err, connection) {
 
     // Use the connection
     connection.query('SELECT * from user', function(error, results, fields) {
-        console.log(results)
+        // console.log(results)
 
         // When done with the connection, release it.
         connection.release()

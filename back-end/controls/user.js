@@ -77,7 +77,7 @@ module.exports = {
     login(req, res) {
         const user_name = req.body.user_name
         const pass = req.body.pass
-        console.log('pass====', pass)
+        // console.log('pass====', pass)
 
         func.connPool('SELECT * FROM user where user_name = ?', [user_name], rows => {
             // console.log(rows)
